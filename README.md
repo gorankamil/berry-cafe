@@ -8,6 +8,7 @@ The website for Berry Cafe, a cozy, vintage-style cafe.
 |-------------------|------------|
 | `index.html`      | The homepage: all the words and page sections |
 | `css/styles.css`  | The look: colors, fonts and layout |
+| `js/main.js`      | Makes the menu category buttons work |
 | `uploads/`        | **Drop box:** upload logos, palette, photos and documents here |
 | `images/`         | The finished images used on the website |
 

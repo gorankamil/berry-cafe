@@ -3,19 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Berry Cafe</title>
-  <meta name="description" content="Berry Cafe — a cozy, vintage-style cafe.">
+  <title>Berry Cafe | Where Passion Meets Coffee</title>
+  <meta name="description" content="Berry Cafe (بيري كافيه) is a cozy, vintage-style cafe serving hand-crafted coffee, iced lattes, mojitos, cookies, cakes and croissants since 2022.">
+  <meta name="theme-color" content="#208985">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Quicksand:wght@500..700&family=Yellowtail&display=swap" rel="stylesheet">
+  <!-- Arabic lettering: only the letters of "بيري كافيه" are downloaded -->
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&text=%D8%A8%D9%8A%D8%B1%D9%8A%20%D9%83%D8%A7%D9%81%D9%8A%D9%87&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
+  <!-- Small laurel sprig used as a decorative divider (drawn from the laurel in the logo) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="sprig" viewBox="0 0 64 16">
+      <path d="M1 11 C 20 11, 40 9, 62 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      <g fill="currentColor">
+        <path transform="translate(12 10.6) rotate(-40)" d="M0 0 C3 -2.6 7 -2.6 9 0 C7 2.6 3 2.6 0 0Z"/>
+        <path transform="translate(18 10.4) rotate(35)" d="M0 0 C3 -2.6 7 -2.6 9 0 C7 2.6 3 2.6 0 0Z"/>
+        <path transform="translate(26 9.8) rotate(-45)" d="M0 0 C3 -2.6 7 -2.6 9 0 C7 2.6 3 2.6 0 0Z"/>
+        <path transform="translate(32 9.4) rotate(30)" d="M0 0 C3 -2.6 7 -2.6 9 0 C7 2.6 3 2.6 0 0Z"/>
+        <path transform="translate(40 8.2) rotate(-50)" d="M0 0 C3 -2.6 7 -2.6 9 0 C7 2.6 3 2.6 0 0Z"/>
+        <path transform="translate(46 7.4) rotate(25)" d="M0 0 C3 -2.6 7 -2.6 9 0 C7 2.6 3 2.6 0 0Z"/>
+        <path transform="translate(54 5.6) rotate(-20)" d="M0 0 C3 -2.6 7 -2.6 9 0 C7 2.6 3 2.6 0 0Z"/>
+      </g>
+    </symbol>
+  </svg>
+
   <header class="site-header">
-    <a href="#top" class="wordmark">Berry Cafe</a>
-    <nav>
+    <a href="#top" class="brand">
+      <img src="images/logo-mark-teal.png" alt="" width="106" height="160">
+      <span>Berry Cafe</span>
+    </a>
+    <nav aria-label="Main">
       <a href="#story">Our Story</a>
       <a href="#menu">Menu</a>
       <a href="#gallery">Gallery</a>
@@ -25,66 +51,294 @@
 
   <main id="top">
 
-    <!-- HERO: the big welcome banner at the top of the page -->
+    <!-- ============ WELCOME BANNER ============ -->
     <section class="hero">
-      <p class="eyebrow">Est. ____</p>
-      <h1>Berry Cafe</h1>
-      <div class="rule"><span>&#10086;</span></div>
-      <p class="tagline">Your tagline will go here</p>
-      <a href="#menu" class="button">See the Menu</a>
-    </section>
-
-    <!-- OUR STORY -->
-    <section id="story" class="section">
-      <h2>Our Story</h2>
-      <div class="rule"><span>&#10022;</span></div>
-      <div class="two-col">
-        <div class="photo-frame placeholder">Your photo here</div>
-        <p>This is where the story of Berry Cafe will live: how it started, what makes it special, and why people love coming back.</p>
-      </div>
-    </section>
-
-    <!-- MENU -->
-    <section id="menu" class="section section-alt">
-      <h2>The Menu</h2>
-      <div class="rule"><span>&#10022;</span></div>
-      <div class="menu-card">
-        <h3>Coffee &amp; Tea</h3>
-        <ul class="menu-list">
-          <li><span>Menu item</span><span class="dots"></span><span>$0.00</span></li>
-          <li><span>Menu item</span><span class="dots"></span><span>$0.00</span></li>
-          <li><span>Menu item</span><span class="dots"></span><span>$0.00</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery" class="section">
-      <h2>Gallery</h2>
-      <div class="rule"><span>&#10022;</span></div>
-      <div class="gallery">
-        <div class="photo-frame placeholder">Photo</div>
-        <div class="photo-frame placeholder">Photo</div>
-        <div class="photo-frame placeholder">Photo</div>
-      </div>
-    </section>
-
-    <!-- VISIT US -->
-    <section id="visit" class="section section-alt">
-      <h2>Come Visit</h2>
-      <div class="rule"><span>&#10022;</span></div>
-      <div class="visit">
-        <div>
-          <h3>Hours</h3>
-          <p>Mon &ndash; Fri: __ to __<br>Sat &ndash; Sun: __ to __</p>
+      <div class="hero-inner">
+        <div class="hero-photo hero-photo--left frame frame--polaroid">
+          <img src="images/berry-cafe-iced.jpg" alt="An iced coffee in a Berry Café cup" width="560" height="575">
         </div>
-        <div>
-          <h3>Find Us</h3>
-          <p>Street address<br>City, Postcode</p>
+
+        <div class="hero-center">
+          <p class="hero-est">Est. 2022</p>
+          <h1 class="hero-logo">
+            <img src="images/logo-emblem-cream.png" alt="Berry Cafe" width="560" height="469">
+          </h1>
+          <p class="hero-tagline">Where Passion Meets Coffee</p>
+          <p class="hero-arabic" lang="ar" dir="rtl">بيري كافيه</p>
+          <div class="hero-actions">
+            <a class="btn btn--cream" href="#menu">See the Menu</a>
+            <a class="btn btn--ghost" href="#visit">Find Us</a>
+          </div>
         </div>
-        <div>
-          <h3>Say Hello</h3>
-          <p>Phone number<br>Email address</p>
+
+        <div class="hero-photo hero-photo--right frame frame--polaroid">
+          <img src="images/berry-cafe-cappuccino.jpg" alt="A frothy iced coffee dusted with cinnamon in a Berry Café cup" width="495" height="570">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR STORY ============ -->
+    <section id="story" class="section section--paper">
+      <div class="container story">
+        <figure class="story-photo">
+          <div class="frame frame--wood">
+            <img src="images/team.jpg" alt="Three smiling baristas in Berry Coffee aprons in front of the counter" width="613" height="590" loading="lazy">
+          </div>
+          <figcaption>The Berry Cafe family</figcaption>
+        </figure>
+
+        <div class="story-text">
+          <p class="kicker">Our Story</p>
+          <h2>Every corner tells a different story</h2>
+          <div class="ornament ornament--left" aria-hidden="true">
+            <svg class="flip"><use href="#sprig"/></svg><span></span><svg><use href="#sprig"/></svg>
+          </div>
+          <p class="lead">Since 2022, Berry Cafe has been the place where passion meets coffee.</p>
+          <p>Step inside and you'll find dusty teal walls lined with vintage frames, old clocks and candlesticks, and warm wooden tables. It's a place to linger over a latte, catch up with friends, or simply slow down for a while.</p>
+          <p>Behind the counter, the Berry Cafe family makes everything from a classic Ottoman coffee to our signature Berry Special mixes, served alongside fresh cookies, croissants and cakes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section id="menu" class="section section--cream">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">The Menu</p>
+          <h2>Coffee, sweets &amp; everything in between</h2>
+          <div class="ornament" aria-hidden="true">
+            <svg class="flip"><use href="#sprig"/></svg><span></span><svg><use href="#sprig"/></svg>
+          </div>
+          <p class="menu-note">All prices in Iraqi Dinar (IQD) &middot; <span class="pop" aria-hidden="true">&#9733;</span> customer favourite</p>
+        </header>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab" role="tab" id="tab-coffee" aria-controls="menu-coffee" aria-selected="true">Coffee</button>
+          <button class="menu-tab" role="tab" id="tab-iced" aria-controls="menu-iced" aria-selected="false" tabindex="-1">Iced Coffee</button>
+          <button class="menu-tab" role="tab" id="tab-hot" aria-controls="menu-hot" aria-selected="false" tabindex="-1">Hot Drinks</button>
+          <button class="menu-tab" role="tab" id="tab-frappe" aria-controls="menu-frappe" aria-selected="false" tabindex="-1">Frappé</button>
+          <button class="menu-tab" role="tab" id="tab-shakes" aria-controls="menu-shakes" aria-selected="false" tabindex="-1">Milkshakes</button>
+          <button class="menu-tab" role="tab" id="tab-smoothies" aria-controls="menu-smoothies" aria-selected="false" tabindex="-1">Smoothies</button>
+          <button class="menu-tab" role="tab" id="tab-juices" aria-controls="menu-juices" aria-selected="false" tabindex="-1">Juices</button>
+          <button class="menu-tab" role="tab" id="tab-mojitos" aria-controls="menu-mojitos" aria-selected="false" tabindex="-1">Mojitos</button>
+          <button class="menu-tab" role="tab" id="tab-energy" aria-controls="menu-energy" aria-selected="false" tabindex="-1">Energy</button>
+          <button class="menu-tab" role="tab" id="tab-desserts" aria-controls="menu-desserts" aria-selected="false" tabindex="-1">Desserts</button>
+          <button class="menu-tab" role="tab" id="tab-croissants" aria-controls="menu-croissants" aria-selected="false" tabindex="-1">Croissants</button>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-panel" role="tabpanel" id="menu-coffee" aria-labelledby="tab-coffee">
+            <h3>Coffee</h3>
+            <ul class="menu-list menu-list--two">
+              <li><span class="item">Mocha</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Cappuccino</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Americano</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Macchiato</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Nescafe</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Spanish Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Ottoman Coffee</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Pistachio Coffee</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Special Berry Cafe</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Lotus Coffee</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-iced" aria-labelledby="tab-iced">
+            <h3>Iced Coffee</h3>
+            <ul class="menu-list menu-list--two">
+              <li><span class="item">Iced Apricot Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Iced Americano</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Pistachio Iced Coffee</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Iced Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Caramel Iced Latte <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Vanilla Iced Latte <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Hazelnut Iced Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Cookies Iced Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Pistachio Iced Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Rose Iced Latte</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-hot" aria-labelledby="tab-hot">
+            <h3>Hot Drinks</h3>
+            <ul class="menu-list">
+              <li><span class="item">Sahlab</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Hot Chocolate</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-frappe" aria-labelledby="tab-frappe">
+            <h3>Frappé</h3>
+            <ul class="menu-list menu-list--two">
+              <li><span class="item">Caramel Frappé</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Vanilla Frappé</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Hazelnut Frappé</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Rose Frappé</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Cookies Frappé</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Chocolate Frappé</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Coconut &amp; Chocolate Frappé</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-shakes" aria-labelledby="tab-shakes">
+            <h3>Milkshakes</h3>
+            <ul class="menu-list menu-list--two">
+              <li><span class="item">Nutella Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+              <li><span class="item">Kinder Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+              <li><span class="item">Oreo Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+              <li><span class="item">Lotus Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+              <li><span class="item">Kit Kat Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+              <li><span class="item">Strawberry Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+              <li><span class="item">Pistachio Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+              <li><span class="item">Special Berry Cafe Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,500</span></li>
+              <li><span class="item">Energy Milkshake</span><span class="dots" aria-hidden="true"></span><span class="price">4,500</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-smoothies" aria-labelledby="tab-smoothies">
+            <h3>Smoothies</h3>
+            <ul class="menu-list menu-list--two">
+              <li><span class="item">Mango Smoothie</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Strawberry Smoothie</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Apple Smoothie</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Blueberry Smoothie</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Coconut Smoothie</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Watermelon Smoothie</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Lemon &amp; Apple Smoothie</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Berry Special Smoothie Mix</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-juices" aria-labelledby="tab-juices">
+            <h3>Fresh Juices</h3>
+            <ul class="menu-list">
+              <li><span class="item">Orange Juice <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Lemon Juice</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Orange &amp; Lemon Juice</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Banana &amp; Nestle Juice</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Banana &amp; Milk Juice</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-mojitos" aria-labelledby="tab-mojitos">
+            <h3>Mojitos</h3>
+            <ul class="menu-list menu-list--two">
+              <li><span class="item">Mango Mojito</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Blue Bojito</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Kiwi Mojito</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Pineapple Mojito</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Strawberry Mojito</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Pomegranate Mojito</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Lemon &amp; Mint Mojito</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Berry Special Mojito Mix</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-energy" aria-labelledby="tab-energy">
+            <h3>Energy Drinks</h3>
+            <ul class="menu-list">
+              <li><span class="item">Tiger</span><span class="dots" aria-hidden="true"></span><span class="price">2,000</span></li>
+              <li><span class="item">Red Bull</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Mexican Tiger</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Mint Mexican Tiger</span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span></li>
+              <li><span class="item">Pomegranate Mexican Tiger</span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Black Mexican Tiger</span><span class="dots" aria-hidden="true"></span><span class="price">2,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-desserts" aria-labelledby="tab-desserts">
+            <h3>Desserts</h3>
+            <ul class="menu-list menu-list--two">
+              <li><span class="item">Banana Bread</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Brownie Cookies <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Dark Cookies <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Red Velvet Cookies</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Sutlach</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Tres Leches <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Cheesecake <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">3,000</span><small class="note">Flavour depends on the day</small></li>
+              <li><span class="item">Nutella Cake <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">3,500</span></li>
+              <li><span class="item">Tres Leches Cake</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Chocolate Pancake</span><span class="dots" aria-hidden="true"></span><span class="price">4,000</span></li>
+            </ul>
+          </div>
+          <div class="menu-panel" role="tabpanel" id="menu-croissants" aria-labelledby="tab-croissants">
+            <h3>Croissants</h3>
+            <ul class="menu-list">
+              <li><span class="item">Cheese Croissant</span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+              <li><span class="item">Chocolate Croissant <span class="pop" title="Customer favourite">&#9733;<span class="sr-only"> Customer favourite</span></span></span><span class="dots" aria-hidden="true"></span><span class="price">2,500</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="section section--wall">
+      <div class="container">
+        <header class="section-head section-head--light">
+          <p class="kicker">Gallery</p>
+          <h2>A little look inside</h2>
+          <div class="ornament" aria-hidden="true">
+            <svg class="flip"><use href="#sprig"/></svg><span></span><svg><use href="#sprig"/></svg>
+          </div>
+        </header>
+
+        <div class="gallery-wall">
+          <figure class="frame frame--wood">
+            <img src="images/interior-frames.jpg" alt="A teal wall covered in vintage picture frames" width="560" height="565" loading="lazy">
+          </figure>
+          <figure class="frame frame--polaroid">
+            <img src="images/crepes.jpg" alt="A table full of crepes and pancakes drizzled with chocolate, pistachio and Lotus" width="522" height="785" loading="lazy">
+            <figcaption>Sweet things</figcaption>
+          </figure>
+          <figure class="frame frame--gold">
+            <img src="images/barista-pour.jpg" alt="A smiling barista pouring espresso over an iced latte" width="606" height="682" loading="lazy">
+          </figure>
+          <figure class="frame frame--gold">
+            <img src="images/iced-drinks.jpg" alt="Four iced coffees seen from above in a Berry carrier" width="530" height="585" loading="lazy">
+          </figure>
+          <figure class="frame frame--polaroid">
+            <img src="images/interior-corner.jpg" alt="A quiet corner with a dining table, vintage shelf and candlesticks" width="515" height="735" loading="lazy">
+            <figcaption>A quiet corner</figcaption>
+          </figure>
+          <figure class="frame frame--wood">
+            <img src="images/lattes-cookies.jpg" alt="Two lattes with red velvet cookies and a croissant on a woven table runner" width="607" height="582" loading="lazy">
+          </figure>
+          <figure class="frame frame--wood">
+            <img src="images/cups-carrier.jpg" alt="Iced coffees in Berry Café cups with English and Arabic lettering" width="563" height="473" loading="lazy">
+          </figure>
+          <figure class="frame frame--polaroid">
+            <img src="images/blue-mojito.jpg" alt="A bright blue iced drink in a Berry Coffee cup" width="577" height="688" loading="lazy">
+            <figcaption>Summer in a cup</figcaption>
+          </figure>
+          <figure class="frame frame--gold">
+            <img src="images/chocolate-crepe.jpg" alt="A chocolate crepe topped with cookie crumbs" width="552" height="631" loading="lazy">
+          </figure>
+          <figure class="frame frame--wood">
+            <img src="images/barista-passion.jpg" alt="A barista steaming milk, with the words Where Passion Meets Coffee" width="615" height="590" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT US ============ -->
+    <!-- Items marked class="todo" are placeholders waiting for real details -->
+    <section id="visit" class="section section--paper">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Visit Us</p>
+          <h2>Come in, stay a while</h2>
+          <div class="ornament" aria-hidden="true">
+            <svg class="flip"><use href="#sprig"/></svg><span></span><svg><use href="#sprig"/></svg>
+          </div>
+        </header>
+
+        <div class="visit-grid">
+          <div class="visit-card">
+            <h3>Opening Hours</h3>
+            <p class="todo">Opening hours</p>
+          </div>
+          <div class="visit-card">
+            <h3>Find Us</h3>
+            <p class="todo">Street address, city</p>
+          </div>
+          <div class="visit-card">
+            <h3>Say Hello</h3>
+            <p class="todo">Phone number</p>
+            <p class="todo">Instagram link</p>
+          </div>
         </div>
       </div>
     </section>
@@ -92,8 +346,17 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; Berry Cafe &middot; Made with love &amp; good coffee</p>
+    <img src="images/logo-mark-cream.png" alt="" width="106" height="160" loading="lazy">
+    <p class="footer-tagline">Where Passion Meets Coffee</p>
+    <nav aria-label="Footer">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Berry Cafe &middot; <span lang="ar" dir="rtl">بيري كافيه</span></p>
   </footer>
 
+  <script src="js/main.js" defer></script>
 </body>
 </html>
