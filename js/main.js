@@ -13,10 +13,13 @@ function selectTab(tab, focus) {
   tab.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
 }
 
+// On the Arabic page the tabs run right to left, so the arrow keys swap.
+const forward = document.documentElement.dir === 'rtl' ? -1 : 1;
+
 tabs.forEach((tab, i) => {
   tab.addEventListener('click', () => selectTab(tab));
   tab.addEventListener('keydown', (e) => {
-    const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+    const next = { ArrowRight: i + forward, ArrowLeft: i - forward, Home: 0, End: tabs.length - 1 }[e.key];
     if (next === undefined) return;
     e.preventDefault();
     selectTab(tabs[(next + tabs.length) % tabs.length], true);
