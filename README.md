@@ -14,5 +14,6 @@ The website for Berry Cafe, a cozy, vintage-style cafe in Kirkuk.
 | `js/main.js`      | Makes the menu category buttons work |
 | `uploads/`        | **Drop box:** upload logos, palette, photos and documents here |
 | `images/`         | The finished images used on the website |
+| `print/`          | QR code and a printable A6 table card (PDF ready for a print shop) |
 
 This is a plain HTML and CSS website. It doesn't need any special software, and it can be hosted for free.

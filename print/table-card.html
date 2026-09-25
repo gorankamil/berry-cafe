@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Berry Cafe table card</title>
+  <!-- Printable A6 table card (105 × 148 mm). Open in a browser and print, or use the ready-made PDF next to this file. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Quicksand:wght@500..700&family=Yellowtail&family=El+Messiri:wght@500..700&family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
+  <style>
+    @page { size: 105mm 148mm; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      width: 105mm;
+      height: 148mm;
+      background: #FDF7EE;
+      color: #155E5B;
+      font-family: "Fraunces", Georgia, serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .card {
+      position: relative;
+      height: 100%;
+      padding: 9mm 8mm 7mm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 4mm;
+      border: 0.35mm solid #155E5B;
+      outline: 0.2mm solid rgba(21, 94, 91, 0.5);
+      outline-offset: -1.4mm;
+    }
+    .logo { width: 40mm; }
+    h1 {
+      margin: 3.5mm 0 0;
+      font-size: 17pt;
+      font-weight: 600;
+      font-variation-settings: "SOFT" 100, "WONK" 1;
+      line-height: 1.1;
+    }
+    .ar-title {
+      margin: 0.5mm 0 0;
+      font-family: "El Messiri", serif;
+      font-weight: 600;
+      font-size: 14pt;
+      line-height: 1.4;
+    }
+    .qr { width: 50mm; margin: 3mm 0 2.5mm; }
+    .tagline { margin: 0; font-family: "Yellowtail", cursive; font-size: 17pt; line-height: 1.1; }
+    .ar-tagline { margin: 0.5mm 0 0; font-family: "Aref Ruqaa", serif; font-weight: 700; font-size: 14pt; line-height: 1.3; }
+    .small {
+      margin: auto 0 0;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 600;
+      font-size: 7.5pt;
+      letter-spacing: 0.02em;
+      color: #6B5646;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="../images/logo-emblem-teal.png" alt="Berry Coffee">
+    <h1>Scan for our menu</h1>
+    <p class="ar-title" lang="ar" dir="rtl">امسح الرمز لتصفّح القائمة</p>
+    <img class="qr" src="berry-cafe-qr.svg" alt="QR code for gorankamil.github.io/berry-cafe">
+    <p class="tagline">Where Passion Meets Coffee</p>
+    <p class="ar-tagline" lang="ar" dir="rtl">حيث يلتقي الشغف بالقهوة</p>
+    <p class="small">gorankamil.github.io/berry-cafe &nbsp;&middot;&nbsp; Instagram @berry_caffe</p>
+  </div>
+</body>
+</html>
